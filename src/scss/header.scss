@@ -11,6 +11,12 @@ header {
     margin: 24px 40px;
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin: 24px 165px;
+    margin-bottom: 0;
+    height: 56px;
+  }
 }
 
 // logo
@@ -20,6 +26,11 @@ header {
   line-height: 35px;
 
   color: #13183f;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 45.36px;
+  }
 }
 
 // header cta
@@ -37,4 +48,20 @@ header {
 
   width: 140px;
   height: 48px;
+
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+
+  &:hover {
+    background: #666ca3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 167px;
+    height: 56px;
+
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
