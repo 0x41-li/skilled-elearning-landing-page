@@ -1,0 +1,35 @@
+header {
+  height: 48px;
+  margin: 16px;
+  margin-bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// logo
+.logo__text {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 35px;
+
+  color: #13183f;
+}
+
+// header cta
+.header__cta {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: #ffffff;
+
+  background: #13183f;
+  border-radius: 28px;
+
+  border: none;
+
+  width: 140px;
+  height: 48px;
+}
