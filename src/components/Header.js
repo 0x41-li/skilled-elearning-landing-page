@@ -5,7 +5,9 @@ import gsap from "gsap";
 // scss
 import "../scss/header.scss";
 
-export default function Header() {
+// context
+
+export default function Header(props) {
   const header = useRef();
   const logoText = useRef();
   const cta = useRef();
@@ -14,21 +16,37 @@ export default function Header() {
   const tl = gsap.timeline();
 
   useEffect(() => {
-    const headerStyle = window.getComputedStyle(header.current);
+    // get header and CTA styles
+    const headerStyles = window.getComputedStyle(header.current);
+    const ctaStyles = window.getComputedStyle(cta.current);
 
-    const headerMarginLeftPlusLogoTextWidth =
-      parseInt(headerStyle.marginLeft.replace("px", "")) +
+    // header marginLeft + logo width, so that we can get the logo out of the viewport
+    const headerMarginLeftPlusLogoWidth =
+      parseInt(headerStyles.marginLeft.replace("px", "")) +
       logoText.current.clientWidth;
 
-    tl.from(header.current, { autoAlpha: 0 })
-      .from(logoText.current, {
-        x: -headerMarginLeftPlusLogoTextWidth,
-        duration: 0.6,
-      })
-      .from(cta.current, {
-        y: "-200",
-        duration: 0.6,
-      }, 0.2);
+    // header MarginTop + CTA height, so that we can cta out of the viewport
+    const headerMarginTopPlusCtaHeight =
+      parseInt(ctaStyles.height.replace("px", "")) +
+      parseInt(headerStyles.marginTop.replace("px", ""));
+
+    tl.from(header.current, { autoAlpha: 0, delay: 1 })
+      .from(
+        logoText.current,
+        {
+          x: -headerMarginLeftPlusLogoWidth,
+          duration: 0.6,
+        },
+        1
+      )
+      .from(
+        cta.current,
+        {
+          y: -headerMarginTopPlusCtaHeight,
+          duration: 0.6,
+        },
+        1
+      );
   }, []);
 
   return (
