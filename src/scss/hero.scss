@@ -1,0 +1,116 @@
+.hero {
+  margin-top: 38px;
+}
+
+.hero__text-part {
+  padding: 0 16px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+
+  color: #13183f;
+}
+
+.hero__p {
+  margin-top: 26px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #83869a;
+}
+
+.hero__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #ffffff;
+
+  border: none;
+
+  width: 167px;
+  height: 56px;
+  margin-top: 24px;
+
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 31.5px;
+
+  cursor: pointer;
+}
+
+// hero illustration part
+.hero__illustration-part {
+  margin-top: 46px;
+
+  padding: 0 24px;
+}
+
+.hero__img-wrapper {
+  position: relative;
+  height: 301px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// the two boxes which are with the image
+
+.hero__members {
+  padding: 16px 20px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+
+  background: #ffffff;
+  box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
+  border-radius: 10px;
+}
+
+.hero__members-p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+
+  color: #83869a;
+}
+
+.hero__members-num {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #13183f;
+}
+
+.hero__course-hours {
+  padding: 16px 45px 16px 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+
+  background: #ffffff;
+  box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
+  border-radius: 10px;
+}
+
+.hero__course-hours-p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+
+  color: #83869a;
+}
+
+.hero__course-hours-num {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #13183f;
+}
