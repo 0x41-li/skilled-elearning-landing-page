@@ -4,6 +4,12 @@
 
 .hero__text-part {
   padding: 0 16px;
+
+  max-width: 420px;
+
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 h1 {
@@ -45,8 +51,10 @@ h1 {
 
 // hero illustration part
 .hero__illustration-part {
-  margin-top: 46px;
+  max-width: 327px;
 
+  margin: 0 auto;
+  margin-top: 46px;
   padding: 0 24px;
 }
 
