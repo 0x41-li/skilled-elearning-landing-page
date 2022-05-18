@@ -30,12 +30,13 @@ export default function Header(props) {
       parseInt(ctaStyles.height.replace("px", "")) +
       parseInt(headerStyles.marginTop.replace("px", ""));
 
-    tl.from(header.current, { autoAlpha: 0, delay: 1 })
+    tl.from(header.current, { autoAlpha: 0,delay: 1 })
       .from(
         logoText.current,
         {
           x: -headerMarginLeftPlusLogoWidth,
-          duration: 0.6,
+          duration: 1,
+          ease: "power4",
         },
         1
       )
@@ -43,7 +44,8 @@ export default function Header(props) {
         cta.current,
         {
           y: -headerMarginTopPlusCtaHeight,
-          duration: 0.6,
+          duration: 0.2,
+          ease: "power4",
         },
         1
       );
