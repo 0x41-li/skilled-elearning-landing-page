@@ -5,6 +5,7 @@ import "./scss/app.scss";
 
 // components
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 export default function App() {
   const [pageAllLoaded, setPageAllLoaded] = useState(false);
@@ -17,12 +18,11 @@ export default function App() {
     return () => window.removeEventListener("load", pageLoadHandler);
   }, [pageAllLoaded]);
 
-  console.log(pageAllLoaded);
-
   if (pageAllLoaded) {
     return (
       <>
         <Header />
+        <Hero />
       </>
     );
   }

@@ -7,7 +7,7 @@ import "../scss/header.scss";
 
 // context
 
-export default function Header(props) {
+export default function Header() {
   const header = useRef();
   const logoText = useRef();
   const cta = useRef();
@@ -30,7 +30,7 @@ export default function Header(props) {
       parseInt(ctaStyles.height.replace("px", "")) +
       parseInt(headerStyles.marginTop.replace("px", ""));
 
-    tl.from(header.current, { autoAlpha: 0,delay: 1 })
+    tl.from(header.current, { autoAlpha: 0, delay: 1 })
       .from(
         logoText.current,
         {
