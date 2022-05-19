@@ -27,7 +27,9 @@
     margin: 0;
     margin-top: 99px;
 
-    flex: 0 0 398px;
+    flex: 1 0 398px;
+
+    max-width: 700px;
   }
 }
 
@@ -87,8 +89,7 @@ h1 {
     margin-left: 33px;
 
     max-width: unset;
-    flex: 1;
-    
+    flex: 1 0 20%;
   }
 }
 
