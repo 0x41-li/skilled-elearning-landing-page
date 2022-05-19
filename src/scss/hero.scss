@@ -21,8 +21,11 @@
   max-width: 420px;
 
   margin: 0 auto;
+  
 
-  text-align: center;
+  @media screen and (min-width: 426px) {
+    text-align: center;
+  }
 
   @media screen and (min-width: 768px) {
     text-align: left;
