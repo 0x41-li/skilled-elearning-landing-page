@@ -108,6 +108,15 @@ h1 {
 
     margin-top: 40px;
   }
+
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  }
 }
 
 // hero illustration part
