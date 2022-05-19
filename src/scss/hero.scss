@@ -1,5 +1,6 @@
 .hero {
   margin-top: 38px;
+  visibility: hidden;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -21,7 +22,6 @@
   max-width: 420px;
 
   margin: 0 auto;
-  
 
   @media screen and (min-width: 426px) {
     text-align: center;
