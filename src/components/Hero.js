@@ -2,6 +2,8 @@ import React from "react";
 
 // images
 import heroImgMobile from "../assets/images/hero/circle-wrapper-with-female-mobile.png";
+import heroImgTablet from "../assets/images/hero/oval-wrapper-with-female-tablet.png";
+import gradientRectangle from "../assets/images/hero/gradient-rectangle-of-oval-wrapper-tablet.png";
 
 // import scss
 import "../scss/hero.scss";
@@ -23,7 +25,9 @@ export default function () {
             <p className="hero__members-p">Members</p>
             <p className="hero__members-num">29k</p>
           </div>
-          <img src={heroImgMobile} alt="" />
+          <img className="d-m" src={heroImgMobile} alt="" />
+          <img className="d-t" src={heroImgTablet} alt="" />
+          <img className="hero__gradient-rectangle d-t" src={gradientRectangle} alt="" />
           <div className="hero__course-hours">
             <p className="hero__course-hours-p">Course hours</p>
             <p className="hero__course-hours-num">1,451</p>

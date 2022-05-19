@@ -1,7 +1,16 @@
 .hero {
   margin-top: 38px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    margin-top: 0;
+
+    padding: 0 81px 0px 39px;
+  }
 }
 
+// hero text part
 .hero__text-part {
   padding: 0 16px;
 
@@ -10,6 +19,16 @@
   margin: 0 auto;
 
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+
+    padding: 0;
+    margin: 0;
+    margin-top: 99px;
+
+    flex: 0 0 398px;
+  }
 }
 
 h1 {
@@ -28,6 +47,10 @@ h1 {
   line-height: 26px;
 
   color: #83869a;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 25px;
+  }
 }
 
 .hero__btn {
@@ -56,6 +79,17 @@ h1 {
   margin: 0 auto;
   margin-top: 46px;
   padding: 0 24px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+
+    margin-left: 33px;
+
+    max-width: unset;
+    flex: 1;
+    
+  }
 }
 
 .hero__img-wrapper {
@@ -65,10 +99,20 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    height: auto;
+
+    justify-content: flex-start;
+
+    margin-top: 50px;
+
+    width: 216.54px;
+    margin-left: auto;
+  }
 }
 
 // the two boxes which are with the image
-
 .hero__members {
   padding: 16px 20px;
   position: absolute;
@@ -78,6 +122,11 @@ h1 {
   background: #ffffff;
   box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
   border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    top: -14px;
+    right: -51px;
+  }
 }
 
 .hero__members-p {
@@ -105,6 +154,11 @@ h1 {
   background: #ffffff;
   box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
   border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    bottom: -37px;
+    left: -45px;
+  }
 }
 
 .hero__course-hours-p {
@@ -121,4 +175,15 @@ h1 {
   line-height: 40px;
 
   color: #13183f;
+}
+
+// gradient rectangle
+.hero__gradient-rectangle {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  z-index: -999;
+
+  max-width: unset;
 }
