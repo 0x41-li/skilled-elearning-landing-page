@@ -15,7 +15,7 @@ export default function PopularCourses() {
     <section className="ppc">
       <div className="ppc__boxes">
         <div className="ppc__box">
-          <h2>Check out our most popular courses!</h2>
+          <h2 className="ppc__title">Check out our most popular courses!</h2>
         </div>
         <div className="ppc__box">
           <div className="ppc__box__icon-wrapper">

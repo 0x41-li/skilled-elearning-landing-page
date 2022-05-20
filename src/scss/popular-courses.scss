@@ -1,0 +1,85 @@
+.ppc {
+  margin-top: 66px;
+  padding: 0 16px;
+}
+
+// first box which represent the title of the section
+.ppc__box:nth-child(1) {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+
+  width: 343px;
+  height: 120px;
+
+  padding: 24px 29px 0px 28px;
+
+  margin-top: 0;
+}
+
+.ppc__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #ffffff;
+}
+
+// courses boxes
+.ppc__box {
+  margin-top: 40px;
+
+  height: 259px;
+
+  background: #ffffff;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 10px;
+
+  padding-left: 28px;
+  padding-right: 29px;
+  padding-top: 1px;
+}
+
+.ppc__box__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 56px;
+  height: 56px;
+
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+
+  border-radius: 50%;
+
+  margin-top: -25px;
+}
+
+.ppc__box__title {
+  margin-top: 24px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #13183f;
+}
+
+.ppc__box__para {
+  margin-top: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #83869a;
+}
+
+.ppc__box__anchor {
+  display: block;
+  margin-top: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #f74780;
+}
