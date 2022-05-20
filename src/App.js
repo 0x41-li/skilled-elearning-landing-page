@@ -4,8 +4,9 @@ import React, { useEffect, useState } from "react";
 import "./scss/app.scss";
 
 // components
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Header from "./sections/Header";
+import Hero from "./sections/Hero";
+import PopularCourses from "./sections/PopularCourses";
 
 export default function App() {
   const [pageAllLoaded, setPageAllLoaded] = useState(false);
@@ -20,10 +21,11 @@ export default function App() {
 
   if (pageAllLoaded) {
     return (
-      <>
+      <main>
         <Header />
         <Hero />
-      </>
+        <PopularCourses />
+      </main>
     );
   }
 }

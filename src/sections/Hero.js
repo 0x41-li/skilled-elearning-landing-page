@@ -40,7 +40,7 @@ export default function Hero() {
       );
   }, []);
   return (
-    <div className="hero" ref={hero}>
+    <section className="hero" ref={hero}>
       {/* hero text part */}
       <div className="hero__text-part">
         <h1 ref={h1}>Maximize skill, minimize budget</h1>
@@ -84,6 +84,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
