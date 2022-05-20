@@ -1,6 +1,18 @@
 .ppc {
   margin-top: 66px;
   padding: 0 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 99px;
+    padding: 0px 40px 0px 39px;
+  }
+}
+
+.ppc__boxes {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 // first box which represent the title of the section
@@ -14,6 +26,12 @@
   padding: 24px 29px 0px 28px;
 
   margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    height: 259px;
+
+    padding: 56px 21px 0px 32px;
+  }
 }
 
 .ppc__title {
@@ -22,6 +40,7 @@
   line-height: 32px;
 
   color: #ffffff;
+
 }
 
 // courses boxes
@@ -39,6 +58,22 @@
   padding-left: 28px;
   padding-right: 29px;
   padding-top: 1px;
+
+  @media screen and (min-width: 768px) {
+    flex: 1 1 40%;
+    margin-top: 56px;
+    padding-left: 32px;
+    padding-right: 21px;
+  }
+}
+
+.ppc__box:nth-child(1),
+.ppc__box:nth-child(2) {
+  margin-top: 0px;
+}
+
+.ppc__box:nth-child(even) {
+  margin-left: 11px;
 }
 
 .ppc__box__icon-wrapper {
