@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // scss
 import "../scss/popular-courses.scss";
+
+// gsap and scrollTrigger
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // icons
 import animationIcon from "../assets/icons/popular-courses/animation.png";
@@ -10,6 +14,27 @@ import photographyIcon from "../assets/icons/popular-courses/photography.png";
 import cryptoIcon from "../assets/icons/popular-courses/crypto.png";
 
 export default function PopularCourses() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const boxes = gsap.utils.toArray(".ppc__box");
+
+    boxes.forEach((box) => {
+      gsap.from(box, {
+        scrollTrigger: {
+          trigger: box,
+          start: "top 80%",
+          end: "top 40%",
+          toggleActions: "restart none reverse none",
+          scrub: 1,
+        },
+        y: -40,
+        opacity: 0,
+        stagger: 1
+      });
+    });
+  }, []);
+
   return (
     // ppc stands for PoPular Courses
     <section className="ppc">
