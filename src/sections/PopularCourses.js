@@ -24,7 +24,7 @@ export default function PopularCourses() {
     // gsap timeline
     const tl = gsap.timeline();
 
-    tl.from(ppc.current, { autoAlpha: 0, delay: 1 }, 1);
+    tl.from(ppc.current, { autoAlpha: 0 }, 1);
 
     // popular courses boxes
     const boxes = gsap.utils.toArray(".ppc__box");

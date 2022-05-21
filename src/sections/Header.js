@@ -30,7 +30,7 @@ export default function Header() {
       parseInt(ctaStyles.height.replace("px", "")) +
       parseInt(headerStyles.marginTop.replace("px", ""));
 
-    tl.from(header.current, { autoAlpha: 0, delay: 1 })
+    tl.from(header.current, { autoAlpha: 0, delay: 0.4 })
       .from(
         logoText.current,
         {
