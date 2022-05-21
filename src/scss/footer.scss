@@ -11,6 +11,10 @@ footer {
   @media screen and (min-width: 768px) {
     padding: 36px 39px 36px 40px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 165px;
+  }
 }
 
 .footer__logo__text {
@@ -19,6 +23,11 @@ footer {
   line-height: 35px;
 
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 .footer__btn {
@@ -49,6 +58,7 @@ footer {
     left: 0;
 
     opacity: 0;
+
     z-index: -1;
     height: 100%;
     width: 100%;
@@ -66,5 +76,15 @@ footer {
 
   &:hover::before {
     opacity: 1;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 167px;
+    height: 56px;
+
+    font-size: 18px;
+    line-height: 28px;
+
+    padding: 14px 31px 14px 31px;
   }
 }
