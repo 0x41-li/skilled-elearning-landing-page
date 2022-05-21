@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/skilled-elearning-landing-page/static/css/main.bdc3b05a.css",
+    "main.js": "/skilled-elearning-landing-page/static/js/main.0e1a284e.js",
+    "static/media/oval-wrapper-with-female-desktop.png": "/skilled-elearning-landing-page/static/media/oval-wrapper-with-female-desktop.a638435c2ba5b88736a1.png",
+    "static/media/gradient-rectangle-of-oval-wrapper-desktop.png": "/skilled-elearning-landing-page/static/media/gradient-rectangle-of-oval-wrapper-desktop.70bc29ff04c34c4535cb.png",
+    "static/media/oval-wrapper-with-female-tablet.png": "/skilled-elearning-landing-page/static/media/oval-wrapper-with-female-tablet.001bdc5184e3592c0391.png",
+    "static/media/circle-wrapper-with-female-mobile.png": "/skilled-elearning-landing-page/static/media/circle-wrapper-with-female-mobile.2d596a559672e138ea17.png",
+    "static/media/gradient-rectangle-of-oval-wrapper-tablet.png": "/skilled-elearning-landing-page/static/media/gradient-rectangle-of-oval-wrapper-tablet.e85ad72883129856a525.png",
+    "index.html": "/skilled-elearning-landing-page/index.html",
+    "main.bdc3b05a.css.map": "/skilled-elearning-landing-page/static/css/main.bdc3b05a.css.map",
+    "main.0e1a284e.js.map": "/skilled-elearning-landing-page/static/js/main.0e1a284e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdc3b05a.css",
+    "static/js/main.0e1a284e.js"
+  ]
+}
