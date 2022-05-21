@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 // scss
 import "../scss/popular-courses.scss";
@@ -14,11 +14,22 @@ import photographyIcon from "../assets/icons/popular-courses/photography.png";
 import cryptoIcon from "../assets/icons/popular-courses/crypto.png";
 
 export default function PopularCourses() {
+  // get popular courses section reference
+  const ppc = useRef();
+
   useEffect(() => {
+    // register scrollTrigger Plugin
     gsap.registerPlugin(ScrollTrigger);
 
+    // gsap timeline
+    const tl = gsap.timeline();
+
+    tl.from(ppc.current, { autoAlpha: 0, delay: 1 }, 1);
+
+    // popular courses boxes
     const boxes = gsap.utils.toArray(".ppc__box");
 
+    // run through each box, and add the same gsap scrollTrigger animation
     boxes.forEach((box) => {
       gsap.from(box, {
         scrollTrigger: {
@@ -30,14 +41,13 @@ export default function PopularCourses() {
         },
         y: -40,
         opacity: 0,
-        stagger: 1
       });
     });
   }, []);
 
   return (
     // ppc stands for PoPular Courses
-    <section className="ppc">
+    <section className="ppc" ref={ppc}>
       <div className="ppc__boxes">
         <div className="ppc__box">
           <h2 className="ppc__title">Check out our most popular courses!</h2>
