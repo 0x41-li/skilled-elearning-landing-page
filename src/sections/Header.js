@@ -54,7 +54,7 @@ export default function Header() {
   return (
     <header ref={header}>
       <div className="logo">
-        <p className="logo__text" ref={logoText}>
+        <p className="header__logo__text" ref={logoText}>
           skilled
         </p>
       </div>

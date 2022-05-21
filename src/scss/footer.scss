@@ -1,0 +1,35 @@
+footer {
+  margin-top: 80px;
+  padding: 36px 16px;
+  background: #13183f;
+  height: 120px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo__text {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+
+.footer__btn {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  border-radius: 28px;
+
+  padding: 9px 24px 11px 24px;
+
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+
+  height: 48px;
+
+  color: #ffffff;
+}

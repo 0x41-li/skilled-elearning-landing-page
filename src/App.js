@@ -7,6 +7,7 @@ import "./scss/app.scss";
 import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import PopularCourses from "./sections/PopularCourses";
+import Footer from "./sections/Footer";
 
 export default function App() {
   const [pageAllLoaded, setPageAllLoaded] = useState(false);
@@ -25,6 +26,7 @@ export default function App() {
         <Header />
         <Hero />
         <PopularCourses />
+        <Footer />
       </main>
     );
   }
