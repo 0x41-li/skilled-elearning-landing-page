@@ -39,6 +39,7 @@ export default function Hero() {
         2
       );
   }, []);
+  
   return (
     <section className="hero" ref={hero}>
       {/* hero text part */}

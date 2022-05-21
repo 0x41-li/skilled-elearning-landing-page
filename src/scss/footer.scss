@@ -12,10 +12,14 @@ footer {
 
   @media screen and (min-width: 768px) {
     padding: 36px 39px 36px 40px;
+
+    margin-top: 86px;
   }
 
   @media screen and (min-width: 1200px) {
     padding: 32px 165px;
+
+    margin-top: 140px;
   }
 }
 
@@ -64,12 +68,8 @@ footer {
     z-index: -1;
     height: 100%;
     width: 100%;
-    background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-      ),
-      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+
+    background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 
     transition: opacity 0.4s;
 
@@ -81,7 +81,6 @@ footer {
   }
 
   @media screen and (min-width: 1200px) {
-    width: 167px;
     height: 56px;
 
     font-size: 18px;
