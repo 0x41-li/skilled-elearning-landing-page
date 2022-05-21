@@ -6,6 +6,12 @@
     margin-top: 99px;
     padding: 0px 40px 0px 39px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0px 165px;
+
+    margin-top: 110px;
+  }
 }
 
 .ppc__boxes {
@@ -32,6 +38,12 @@
 
     padding: 56px 21px 0px 32px;
   }
+
+  @media screen and (min-width: 1200px) {
+    height: 322px;
+
+    padding: 64px 32px 0 32px;
+  }
 }
 
 .ppc__title {
@@ -41,6 +53,10 @@
 
   color: #ffffff;
 
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 // courses boxes
@@ -65,15 +81,60 @@
     padding-left: 32px;
     padding-right: 21px;
   }
-}
 
-.ppc__box:nth-child(1),
-.ppc__box:nth-child(2) {
-  margin-top: 0px;
-}
+  @media screen and (min-width: 1200px) {
+    flex: 1 1 30%;
 
-.ppc__box:nth-child(even) {
-  margin-left: 11px;
+    margin-top: 0;
+
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 0 32px;
+  }
+
+  // styling with nth-child selectors
+  &:nth-child(1),
+  &:nth-child(2) {
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+    }
+  }
+
+  &:nth-child(even) {
+    @media screen and (min-width: 768px) {
+      margin-left: 11px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    @media screen and (min-width: 1200px) {
+      margin-top: 80px;
+    }
+  }
+
+  &:nth-child(3),
+  &:nth-child(6) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(5),
+  &:nth-child(6) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
+  }
 }
 
 .ppc__box__icon-wrapper {
@@ -99,6 +160,13 @@
   line-height: 25px;
 
   color: #13183f;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 30px;
+
+    margin-top: 32px;
+  }
 }
 
 .ppc__box__para {
@@ -109,6 +177,15 @@
   line-height: 26px;
 
   color: #83869a;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 28px;
+
+    margin-top: 24px;
+
+    height: 112px;
+  }
 }
 
 .ppc__box__anchor {
