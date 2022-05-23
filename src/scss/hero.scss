@@ -218,6 +218,11 @@ h1 {
   line-height: 28px;
 
   color: #83869a;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .hero__members-num {
@@ -226,6 +231,11 @@ h1 {
   line-height: 40px;
 
   color: #13183f;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 .hero__course-hours {
@@ -257,6 +267,11 @@ h1 {
   line-height: 28px;
 
   color: #83869a;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .hero__course-hours-num {
@@ -265,6 +280,11 @@ h1 {
   line-height: 40px;
 
   color: #13183f;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 // gradient rectangle
