@@ -1,5 +1,4 @@
 footer {
-  margin-top: 80px;
   padding: 36px 16px;
   background: #13183f;
   height: 120px;
@@ -12,14 +11,11 @@ footer {
 
   @media screen and (min-width: 768px) {
     padding: 36px 39px 36px 40px;
-
-    margin-top: 86px;
+    margin-top: 0;
   }
 
   @media screen and (min-width: 1200px) {
     padding: 32px 165px;
-
-    margin-top: 140px;
   }
 }
 
@@ -88,6 +84,6 @@ footer {
 
     padding: 14px 31px 14px 31px;
 
-    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
   }
 }
