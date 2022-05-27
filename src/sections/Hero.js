@@ -20,6 +20,17 @@ export default function Hero() {
   const heroPara = useRef();
   const heroBtn = useRef();
   const heroImgWrapper = useRef();
+  const membersNumber = useRef();
+  const courseHours = useRef();
+
+  // objects
+  const membersObj = {
+    value: 0,
+  };
+
+  const courseHoursObj = {
+    value: 0,
+  };
 
   // gsap timeline
   const tl = gsap.timeline();
@@ -34,12 +45,47 @@ export default function Hero() {
       .from(
         heroImgWrapper.current,
         {
-          x: 400
+          x: 400,
         },
         2
+      )
+      .to(
+        membersObj,
+        {
+          value: 21,
+          duration: 2,
+          onUpdate: (value) => {
+            membersNumber.current.textContent =
+              Math.floor(membersObj.value) + "k";
+          },
+          ease: "none",
+        },
+        2.4
+      )
+      .to(
+        courseHoursObj,
+        {
+          value: 1451,
+          duration: 2,
+          onUpdate: () => {
+            let value = Math.floor(courseHoursObj.value);
+            let valueAsString = Math.floor(courseHoursObj.value).toString();
+
+            if (value >= 1000) {
+              valueAsString =
+                valueAsString.substring(0, 1) +
+                "," +
+                valueAsString.substring(1, valueAsString.lenght);
+            }
+
+            courseHours.current.textContent = valueAsString;
+          },
+          ease: "none",
+        },
+        2.4
       );
   }, []);
-  
+
   return (
     <section className="hero" ref={hero}>
       {/* hero text part */}
@@ -59,7 +105,9 @@ export default function Hero() {
         <div className="hero__img-wrapper" ref={heroImgWrapper}>
           <div className="hero__members">
             <p className="hero__members-p">Members</p>
-            <p className="hero__members-num">29k</p>
+            <p className="hero__members-num" ref={membersNumber}>
+              {membersObj.value}k
+            </p>
           </div>
 
           {/* Hero images  */}
@@ -81,7 +129,9 @@ export default function Hero() {
 
           <div className="hero__course-hours">
             <p className="hero__course-hours-p">Course hours</p>
-            <p className="hero__course-hours-num">1,451</p>
+            <p className="hero__course-hours-num" ref={courseHours}>
+              {courseHoursObj.value}
+            </p>
           </div>
         </div>
       </div>
